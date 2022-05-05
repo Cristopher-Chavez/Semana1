@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Six Flags</title>
+    <link rel="icon" href="./sixflags.jpg" type="image/icon">
+</head>
+<body>
+    <img src="./sixflags.jpg" alt="sixflags" width="400"> <br>
+    <form action="./dynamics/formulario.php" method="POST">
+        <fieldset>
+            <legend>Registro Six Flags</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre">
+            <br><br/>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" name="apellidos">
+            <br><br/>
+            <label for="edad">Edad: </label>
+            <input type="number" name="edad">
+            <br><br/>
+            <label for="direccion">Dirección: </label>
+            <input type="text" name="direccion">
+            <br><br/>
+            <label for="boletos">Número de boletos: </label>
+            <input type="number" name="boletos">
+            <br><br/>
+            <p>
+               Tipo de Boleto:  
+            </p>
+            <select name="tipos">
+                <option value="Normal">Normal</option>
+                <option value="Flash Pass">Flash Pass</option>
+                <option value="Elegante Pass">Elegante Pass</option>
+                <option value="Puma Pass">Puma Pass</option>
+                <option value="Deslactosada Pass">Deslactosada Pass</option>
+            </select>
+            <br><br/>
+            <button type="submit">Enviar</button>
+            <button type="reset">Eliminar</button>
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
